@@ -1,4 +1,5 @@
 <h1>CodeHs answer: Java edition</h1>
+<img src="image/codehs.png" style="width: 100%;">
 
 # What this repo contains:
 * JAVA codes and ONLY JAVA codes
