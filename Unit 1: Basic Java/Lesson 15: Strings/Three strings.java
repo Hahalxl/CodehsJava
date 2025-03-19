@@ -1,37 +1,17 @@
-public class NightBiking extends ConsoleProgram
+public class ThreeStrings extends ConsoleProgram
 {
     public void run()
     {
-        boolean hasHeadlight = readBoolean("Do you have a head light? ");
-        boolean hasBikelight = readBoolean("Do you have a bike light? ");
-        
-        // Negating an OR statement
-        boolean cannotNightBike = !(hasHeadlight || hasBikelight);
-        
-        // Same statement!
-        boolean cannotNightBikeDeMorgan = !hasHeadlight && !hasBikelight;
-        
-        if(cannotNightBike)
-        {
-            System.out.println("You may not bike at night.");
-        }
-        else
-        {
-            System.out.println("You may bike at night!");
-        }
-        
-        if(cannotNightBikeDeMorgan)
-        {
-            System.out.println("You may not bike at night with De Morgan.");
-        }
-        else
-        {
-            System.out.println("You may bike at night with De Morgan!");
-        }
-        
-        if(cannotNightBike == cannotNightBikeDeMorgan)
-        {
-            System.out.println("De Morgan was right!");
+        // Ask the user for three strings.
+        // remember to use the readLine() method.
+        String __var1, __var2, __var3;
+        __var1 = readLine("First string? ");
+        __var2 = readLine("Second string? ");
+        __var3 = readLine("Third string? ");
+        if((__var1 + __var2).equals(__var3)){
+            System.out.println(__var1 + " + " + __var2 + " is equal to " + __var3 + "!");
+        }else{
+            System.out.println(__var1 + " + " + __var2 + " is not equal to " + __var3 + "!");
         }
     }
 }
